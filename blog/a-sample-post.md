@@ -1,5 +1,5 @@
 ---
-path: /blog/first-post
+slug: /blog/first-post
 date: 2021-03-31T15:49:26.379Z
 title: A sample post
 ---

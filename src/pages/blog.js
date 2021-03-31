@@ -14,10 +14,10 @@ const BlogPage = ({ data }) => {
             {
                 nodes ? nodes.map(({frontmatter}) => {
                     return(
-                        <div>
+                        <div key={frontmatter.title}>
                             <h3>{frontmatter.title}</h3>
                             <p>{frontmatter.date}</p>
-                            <p><Link to={frontmatter.path}>Read more &rarr;</Link></p>
+                            <p><Link to={frontmatter.slug}>Read more &rarr;</Link></p>
                         </div>
                     )
                 })
@@ -37,7 +37,7 @@ export const query = graphql`
     ) {
       nodes {
         frontmatter {
-          path
+          slug
           title
           date
         }
