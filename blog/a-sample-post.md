@@ -2,6 +2,7 @@
 slug: /first-post
 date: 2021-03-31T19:06:46.804Z
 title: Welcome to Super Save Slot!
+subtitle: Hello!
 ---
 Hi! Welcome to my blog, Super Save Slot. I'm Richard, and I've been playing video games all my life.
 
