@@ -1,0 +1,12 @@
+.head {
+    margin-bottom: 3rem;
+}
+
+.head h1 {
+    margin-bottom: 1rem;
+}
+
+.date {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.8rem;
+}
