@@ -31,3 +31,46 @@ p {
     font-size: 1.25rem;
     color: hsla(0, 0%, 90%, 0.7);
 }
+
+.header-banner {
+    border: 1px double #fff;
+    padding: 4px;
+    max-width: 500px;
+    margin-bottom: 16px;
+}
+
+.header-banner__content {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-banner__content h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.header-banner__content div {
+    font-family: "Quantico", serif;
+    text-transform: uppercase;
+}
+
+.header-banner__content div:first-child {
+    position: relative;
+}
+
+.header-banner__content div:first-child::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -16px;
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent; 
+    border-left: 8px solid #fff; 
+}

@@ -75,7 +75,7 @@ const BlogRoll = () => {
       <div className={blogRoll}>
           {
               nodes
-               ? exampleData.map(({frontmatter}) => {
+               ? nodes.map(({frontmatter}) => {
                   return(
                       <div 
                         key={frontmatter.title} 
