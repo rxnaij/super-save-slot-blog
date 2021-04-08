@@ -1,7 +1,36 @@
+.blogRoll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.postPreview {
+    max-width: 400px;
+}
+
 .postPreview > *:not(:last-child) {
     margin-bottom: 8px;
 }
 
 .postPreview:not(:last-of-type) {
     margin-bottom: 24px;
+}
+
+.postPreview img {
+    width: 100%;
+    min-height: 200px;
+    background-color: lightgray;
+}
+
+.postPreview h3 a {
+    text-decoration: none;
+}
+
+.postPreviewDate {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.postPreviewSubtitle {
+
 }
