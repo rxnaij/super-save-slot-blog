@@ -27,6 +27,10 @@
     text-decoration: none;
 }
 
+.postPreview h3 a:hover {
+    text-decoration: underline;
+}
+
 .postPreviewDate {
     color: hsla(0, 0%, 100%, 0.6);
 }

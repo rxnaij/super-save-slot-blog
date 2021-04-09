@@ -85,7 +85,6 @@ const BlogRoll = () => {
                           <h3><Link to={frontmatter.slug}>{frontmatter.title}</Link></h3>
                           <p className={postPreviewDate}>{frontmatter.date}</p>
                           <p className={postPreviewSubtitle}>{frontmatter.subtitle}</p>
-                          <p><Link to={frontmatter.slug}>Read more &rarr;</Link></p>
                       </div>
                   )
               })
