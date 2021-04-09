@@ -4,6 +4,7 @@ date: 2021-04-09T04:55:36.707Z
 title: The intrinsic rewards of "filling the map" of a world
 subtitle: Some unfinished thoughts on why exploring Breath of the Wild's
   spectacular world is...just okay
+coverPhoto: 
 ---
 One of my favorite things to do on a summer afternoon is to set off on a bike ride around town. It's a relatively recent hobby, having spent the better part of my adolescence hiding away in my room in front of my computer. Even having grown up here all my life, I still find joy in discovering new places and sights.
 
