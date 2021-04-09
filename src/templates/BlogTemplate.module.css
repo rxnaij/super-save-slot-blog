@@ -2,6 +2,10 @@
     margin-bottom: 3rem;
 }
 
+.head > *:not(:last-child) {
+    margin-bottom: 8px;
+}
+
 .head h1 {
     margin-bottom: 1rem;
 }
@@ -9,4 +13,8 @@
 .date {
     color: hsl(0, 0%, 100%);
     font-size: 0.8rem;
+}
+
+.content {
+    max-width: 720px;
 }
