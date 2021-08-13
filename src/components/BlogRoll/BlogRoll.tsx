@@ -1,12 +1,7 @@
 import React from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 
-import { 
-  blogRoll, 
-  postPreview, 
-  postPreviewDate, 
-  postPreviewSubtitle 
-} from './BlogRoll.module.css'
+import { blogRoll, container, content, subtitle, details, title } from './BlogRoll.module.css'
 
 const BlogRoll = () => {  
     const data = useStaticQuery(graphql`
@@ -20,7 +15,10 @@ const BlogRoll = () => {
             slug
             title
             subtitle
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MM.DD.YY")
+          }
+          wordCount {
+            words
           }
         }
       }
@@ -75,16 +73,27 @@ const BlogRoll = () => {
       <div className={blogRoll}>
           {
               nodes
-               ? nodes.map(({frontmatter}) => {
+               ? nodes.map(({frontmatter, wordCount}) => {
                   return(
                       <div 
                         key={frontmatter.title} 
-                        className={postPreview}
+                        className={container}
                       >
+                        <div className={content}>
                           { frontmatter.img && <img src="" /> }
                           <h3><Link to={frontmatter.slug}>{frontmatter.title}</Link></h3>
-                          <p className={postPreviewDate}>{frontmatter.date}</p>
-                          <p className={postPreviewSubtitle}>{frontmatter.subtitle}</p>
+                          <p className={subtitle}>{frontmatter.subtitle}</p>
+                          <ul className={details}>
+                            <li>
+                              <span className={title}>TIME</span>
+                              <span>{frontmatter.date}</span>
+                            </li>
+                            <li>
+                              <span className={title}>WORDS</span>
+                              <span>{wordCount.words}</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                   )
               })
