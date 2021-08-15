@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
-
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { blogRoll, container, linkToPost, content, info, subtitle, details, field } from './BlogRoll.module.css'
 
 const BlogRoll = () => {  
@@ -16,7 +16,14 @@ const BlogRoll = () => {
             title
             subtitle
             date(formatString: "MM.DD.YY")
-            coverphoto
+            coverphoto {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 968
+                  placeholder: BLURRED
+                )
+              }
+            }
           }
           wordCount {
             words
@@ -84,7 +91,13 @@ const BlogRoll = () => {
                       >
                         <Link className={linkToPost} to={frontmatter.slug}>
                           <div className={content}>
-                            { frontmatter.coverphoto && <img src={frontmatter.coverphoto} /> }
+                            { 
+                              frontmatter.coverphoto && 
+                              <GatsbyImage 
+                                image={getImage(frontmatter.coverphoto)}
+                                alt={frontmatter.title}
+                              /> 
+                            }
                             <div className={info}>
                               <h3>{frontmatter.title}</h3>
                               <p className={subtitle}>{frontmatter.subtitle}</p>
