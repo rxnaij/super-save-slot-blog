@@ -1,6 +1,6 @@
 ---
 slug: yakuza-0-expectations-vs-reality
-date: 2021-08-15T06:23:31.234Z
+date: 2021-05-20T03:21:00.000Z
 title: "Yakuza 0, 40 hours in: a dish that keeps on giving"
 subtitle: Well-balanced, tasty, and still surprising 40 hours in
 coverphoto: https://assets1.ignimgs.com/2015/12/07/cabaretjpg-0d69bf.jpg
