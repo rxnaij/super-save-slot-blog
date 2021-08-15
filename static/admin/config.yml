@@ -11,10 +11,11 @@ collections:
     label: Blog posts
     label_singular: blog post
     folder: blog
-    path: '{{slug}}/index'
+    create: true
+    slug: index
     media_folder: ''
     public_folder: ''
-    create: true
+    path: '{{title}}/index'
     fields:
       - { name: slug, label: Slug, widget: string }
       - { name: date, label: Date, widget: datetime }
