@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 
-import { blogRoll, container, content, subtitle, details, title } from './BlogRoll.module.css'
+import { blogRoll, container, linkToPost, content, info, subtitle, details, field } from './BlogRoll.module.css'
 
 const BlogRoll = () => {  
     const data = useStaticQuery(graphql`
@@ -16,6 +16,7 @@ const BlogRoll = () => {
             title
             subtitle
             date(formatString: "MM.DD.YY")
+            coverphoto
           }
           wordCount {
             words
@@ -71,6 +72,8 @@ const BlogRoll = () => {
   const { nodes } = data.allMarkdownRemark
   return (
       <div className={blogRoll}>
+        <h2>Recent posts</h2>
+        <p>Load save file</p>
           {
               nodes
                ? nodes.map(({frontmatter, wordCount}) => {
@@ -79,21 +82,25 @@ const BlogRoll = () => {
                         key={frontmatter.title} 
                         className={container}
                       >
-                        <div className={content}>
-                          { frontmatter.img && <img src="" /> }
-                          <h3><Link to={frontmatter.slug}>{frontmatter.title}</Link></h3>
-                          <p className={subtitle}>{frontmatter.subtitle}</p>
-                          <ul className={details}>
-                            <li>
-                              <span className={title}>TIME</span>
-                              <span>{frontmatter.date}</span>
-                            </li>
-                            <li>
-                              <span className={title}>WORDS</span>
-                              <span>{wordCount.words}</span>
-                            </li>
-                          </ul>
-                        </div>
+                        <Link className={linkToPost} to={frontmatter.slug}>
+                          <div className={content}>
+                            { frontmatter.coverphoto && <img src={frontmatter.coverphoto} /> }
+                            <div className={info}>
+                              <h3>{frontmatter.title}</h3>
+                              <p className={subtitle}>{frontmatter.subtitle}</p>
+                              <ul className={details}>
+                                <li>
+                                  <span className={field}>TIME</span>
+                                  <span>{frontmatter.date}</span>
+                                </li>
+                                <li>
+                                  <span className={field}>WORDS</span>
+                                  <span>{wordCount.words}</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </Link>
                       </div>
                   )
               })

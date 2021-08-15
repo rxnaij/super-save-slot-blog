@@ -1,32 +1,95 @@
 .blogRoll {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The "Load save file" subtitle */
+.blogRoll > p:first-of-type {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Quantico', 'Open Sans', Helvetica, sans-serif;
+    color:hsla(0, 0%, 100%, 0.5);
 }
 
 .container {
-    max-width: 400px;
     border: 1px solid #fff;
     padding: 6px;
+    width: 100%;
+    transition: width 0.3s ease-out;
+    position: relative;
 }
 
-.container > *:not(:last-child) {
-    margin-bottom: 8px;
+.container:hover {
+    width: 102%;
+    border-width: 2px;
 }
 
+/* Adds animated cursor to side of hovered blog post */
+.container:hover::before {
+    --w: 20px;
+
+    content: "";
+    position: absolute;
+    top: calc(50% - calc(var(--w) / 2));
+    left: calc(-8px - var(--w));
+    width: 0;
+    height: 0;
+    border-top: var(--w) solid transparent;
+    border-bottom: var(--w) solid transparent;
+    border-left: var(--w) solid hsla(0, 0%, 100%, 0.8);
+
+    animation: bounce 0.4s ease-out 0s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: -1rem;
+    }
+}
+
+/* Adds spacing between rows of posts */
 .container:not(:last-of-type) {
     margin-bottom: 24px;
 }
 
+.linkToPost {
+    text-decoration: none;
+}
+
 .content {
+    /* Corner border effect */
+    --b: 1px;   /* thickness of the border */
+    --c: #fff;   /* color of the border */
+    --w: 16px;  /* width of border */
+    
+
+    border: var(--b) solid transparent; /* space for the border */
+    background:
+        linear-gradient(var(--c),var(--c)) top left,
+        linear-gradient(var(--c),var(--c)) top left,
+        linear-gradient(var(--c),var(--c)) bottom left,
+        linear-gradient(var(--c),var(--c)) bottom left,
+        linear-gradient(var(--c),var(--c)) top right,
+        linear-gradient(var(--c),var(--c)) top right,
+        linear-gradient(var(--c),var(--c)) bottom right,
+        linear-gradient(var(--c),var(--c)) bottom right;
+    background-size: var(--b) var(--w),var(--w) var(--b);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+
+    /* Element content */
     padding: 18px;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.content > *:not(:last-child) {
-    padding-bottom: 16px;
+.info > *:not(:last-child) {
+    margin-bottom: 24px;
 }
 
 .content img {
@@ -55,17 +118,18 @@
     font-family: 'Quantico', 'Open Sans', Helvetica, sans-serif;
     margin: 0;
     list-style: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .details li {
     margin-bottom: 0px;
 }
 
-.details .title {
+.details .field {
     color:hsla(0, 0%, 100%, 0.6);
     display: inline-block;
-    width: 25%;
+    width: 80px;
 }
 
 .subtitle {
