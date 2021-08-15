@@ -15,7 +15,7 @@ I was lent the game by a friend over a year ago—it must have been back in 2019
 
 Well, I booted it back up for no other reason than the fact that my current rotation of games—*Apex*, *Yakuza Kiwami*, and \*Dark Souls III—\*is pretty routine at this point. Despite jumping headfirst into a plot whose details I have little recollection of, I was pleasantly surprised by how joyful of a time I had swinging, punching, and web-shooting my way throughout Spidey's New York City.
 
-![Perched and watching the Queens skyline, as one does](/assets/marvel-s-spider-man_20210807222742.jpg)
+![Spider-Man perched atop a building at night](/assets/marvel-s-spider-man_20210807222742.jpg)
 
 ## The part where I nerd out about the world's design because the world is New York City
 
