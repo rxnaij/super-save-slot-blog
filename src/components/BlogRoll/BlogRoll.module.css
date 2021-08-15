@@ -92,10 +92,9 @@
     margin-bottom: 24px;
 }
 
-.content img {
-    width: 100%;
+.coverPhoto {
     min-height: 200px;
-    background-color: lightgray;
+    margin-bottom: 24px;
 }
 
 .content h3 {

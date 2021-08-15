@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { blogRoll, container, linkToPost, content, info, subtitle, details, field } from './BlogRoll.module.css'
+import { blogRoll, container, linkToPost, content, info, coverPhoto, subtitle, details, field } from './BlogRoll.module.css'
 
 const BlogRoll = () => {  
     const data = useStaticQuery(graphql`
@@ -96,6 +96,7 @@ const BlogRoll = () => {
                               <GatsbyImage 
                                 image={getImage(frontmatter.coverphoto)}
                                 alt={frontmatter.title}
+                                className={coverPhoto}
                               /> 
                             }
                             <div className={info}>
