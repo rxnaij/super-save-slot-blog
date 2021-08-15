@@ -1,6 +1,6 @@
 ---
 slug: /first-post
-date: 2021-08-15T06:19:44.577Z
+date: 2021-03-31T07:36:00.000Z
 title: Welcome to Super Save Slot!
 subtitle: A new adventure of sorts!
 coverphoto: yakuza-0_20210507023533.jpg
