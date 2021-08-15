@@ -1,6 +1,6 @@
 ---
 slug: /botw-exploration-thoughts
-date: 2021-08-15T06:17:39.658Z
+date: 2021-04-09T04:55:00.000Z
 title: The intrinsic rewards of "filling the map" of a world
 subtitle: Some unfinished thoughts on why exploring Breath of the Wild's
   spectacular world is...just okay
