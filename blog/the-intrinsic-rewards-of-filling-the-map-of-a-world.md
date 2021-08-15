@@ -4,7 +4,7 @@ date: 2021-04-09T04:55:36.707Z
 title: The intrinsic rewards of "filling the map" of a world
 subtitle: Some unfinished thoughts on why exploring Breath of the Wild's
   spectacular world is...just okay
-coverphoto: /assets/untitled.png
+coverphoto: untitled.png
 ---
 One of my favorite things to do on a summer afternoon is to set off on a bike ride around town. It's a relatively recent hobby, having spent the better part of my adolescence hiding away in my room in front of my computer. Even having grown up here all my life, I still find joy in discovering new places and sights.
 
@@ -12,7 +12,7 @@ Perhaps this love for exploration is why I want to I love The Legend of Zelda: B
 
 There's a fundamental difference in how I experience exploration in BOTW and real life, however. In real life, I find exploring to be extremely rewarding in its own right. In BOTW, I find exploring to be a passable way to pass time—aside from seeing the occasional screenshot-worthy landscape, I find little intrinsic enjoyment from sifting through Hyrule's vast world.
 
-![BOTW: scenery outside Zora's Domain](/assets/2021040822505600-f1c11a22faee3b82f21b330e1b786a39.jpg "I noticed this nice landscape *in the middle of a battle...*and had to capture it!")
+![BOTW: scenery outside Zora's Domain](2021040822505600-f1c11a22faee3b82f21b330e1b786a39.jpg "I noticed this nice landscape *in the middle of a battle...*and had to capture it!")
 
 Here, I want to jot down some of observations comparing and contrasting the way I experience exploration IRL vs. how I experience it playing BOTW. These are more so unpolished observations than well-formed thoughts because I'm still trying to figure them out.
 
@@ -24,7 +24,7 @@ One reason I find myself coming back to BOTW so much is because it's simply a be
 
 Today, I played for around an hour, making my way to Zora's Domain for the first time in at least several dozens of hours of gameplay. Holy crap, that place is gorgeous! The sense of scale crossing under the looming cliffs and over the rushing water is something I can only hope to experience in person.
 
-![BOTW: a nice view closer to Zora's Domain](/assets/2021040823082000-f1c11a22faee3b82f21b330e1b786a39.jpg "I wish I could be there...(minus all of the monsters)")
+![BOTW: a nice view closer to Zora's Domain](2021040823082000-f1c11a22faee3b82f21b330e1b786a39.jpg "I wish I could be there...(minus all of the monsters)")
 
 I suppose that if we were to judge the value of exploring purely based on the quality and quantity of photos taken, BOTW would edge out any expedition I've had IRL.
 
