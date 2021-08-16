@@ -1,6 +1,8 @@
 import React from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import PostStats from '../common/PostStats'
+
 import { blogRoll, container, linkToPost, content, info, coverPhoto, subtitle, details, field } from './BlogRoll.module.css'
 
 const BlogRoll = () => {  
@@ -102,16 +104,10 @@ const BlogRoll = () => {
                             <div className={info}>
                               <h3>{frontmatter.title}</h3>
                               <p className={subtitle}>{frontmatter.subtitle}</p>
-                              <ul className={details}>
-                                <li>
-                                  <span className={field}>TIME</span>
-                                  <span>{frontmatter.date}</span>
-                                </li>
-                                <li>
-                                  <span className={field}>WORDS</span>
-                                  <span>{wordCount.words}</span>
-                                </li>
-                              </ul>
+                              <PostStats>
+                                <PostStats.Group field="TIME" value={frontmatter.date} />
+                                <PostStats.Group field="WORDS" value={wordCount.words} />
+                              </PostStats>
                             </div>
                           </div>
                         </Link>
