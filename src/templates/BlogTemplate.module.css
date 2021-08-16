@@ -1,5 +1,14 @@
-.head {
-    margin-bottom: 3rem;
+
+.container {
+
+}
+
+.post > *:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.head ul {
+    margin-top: 16px;
 }
 
 .head > *:not(:last-child) {
@@ -10,11 +19,38 @@
     margin-bottom: 1rem;
 }
 
-.date {
-    color: hsl(0, 0%, 100%);
-    font-size: 0.8rem;
+.coverPhoto {
+    margin-left: -16px;
+    margin-right: -16px;
 }
 
 .content {
     max-width: 720px;
 }
+
+.content p {
+    font-size: 1.125rem;
+    line-height: 1.4;
+}
+
+.content blockquote {
+    margin-left: 0;
+    padding: 1rem 0 1rem 1.75rem;
+    border-left: 2px solid #fff;
+}
+
+.content blockquote p {
+    display: inline-block;
+    position: relative;
+    font-size: 1.75rem;
+    line-height: 1.17;
+    font-family: 'Quantico';
+}
+
+
+/* .content blockquote p::before {
+    content: '“';
+    font-size: 4rem;
+    display: inline-block;
+    position: relative;
+} */

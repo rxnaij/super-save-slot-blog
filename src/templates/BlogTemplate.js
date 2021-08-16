@@ -7,8 +7,10 @@ import SEO from '../components/seo'
 import PostStats from '../components/common/PostStats'
 
 import { 
+  container,
+  post,
   head, 
-  date,
+  coverPhoto,
   content
 } from './BlogTemplate.module.css'
 
@@ -20,8 +22,8 @@ export default function Template({
   return (
     <Layout>
       <SEO title={frontmatter.title} />
-      <article className="blog-post-container">
-          <div className="blog-post">
+      <article className={container}>
+          <div className={post}>
             <div className={head}>
               <h1>{frontmatter.title}</h1>
               <p className="subtitle">{frontmatter.subtitle}</p>
@@ -33,6 +35,7 @@ export default function Template({
             <GatsbyImage
               image={getImage(frontmatter.coverphoto)}
               alt={frontmatter.title}
+              className={coverPhoto}
             />
             <div
               className={content}
