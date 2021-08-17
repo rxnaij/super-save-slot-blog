@@ -1,8 +1,10 @@
 ---
-slug: marvels-spiderman-first-impressions
-date: 2021-08-11T06:04:00.000Z
 title: "Marvel's Spider-Man: Renewed First Impressions"
 subtitle: A swing and a hit!
+date: 2021-08-11T06:04:00.000Z
+slug: marvels-spiderman-first-impressions
+tags:
+  - Marvel's Spider-Man
 coverphoto: marvels_spider-man_20210810235021.jpg
 ---
 Game: *Marvel's Spider-Man* (PS4)
