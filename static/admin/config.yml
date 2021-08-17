@@ -21,6 +21,6 @@ collections:
       - { name: subtitle, label: Subtitle, widget: string }
       - { name: date, label: Date, widget: datetime }
       - { name: slug, label: Slug, widget: string }
-      - { name: tags, label: Tags, widget: list }
+      - { name: tags, label: Tags, widget: list, field: { label: Tag, name: tag, widget: string }, allow_add: true }
       - { name: coverphoto, label: Cover photo, widget: image }
       - { name: body, label: Body, widget: markdown }
