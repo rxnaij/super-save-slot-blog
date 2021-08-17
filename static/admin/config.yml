@@ -17,9 +17,10 @@ collections:
     public_folder: ''
     path: '{{title}}/index'
     fields:
-      - { name: slug, label: Slug, widget: string }
-      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title, widget: string }
       - { name: subtitle, label: Subtitle, widget: string }
+      - { name: date, label: Date, widget: datetime }
+      - { name: slug, label: Slug, widget: string }
+      - { name: tags, label: Tags, widget: list }
       - { name: coverphoto, label: Cover photo, widget: image }
       - { name: body, label: Body, widget: markdown }
