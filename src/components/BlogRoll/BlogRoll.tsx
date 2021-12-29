@@ -3,7 +3,7 @@ import { useStaticQuery, Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import PostStats from '../common/PostStats'
 
-import { blogRoll, container, linkToPost, content, info, coverPhoto, subtitle, details, field } from './BlogRoll.module.css'
+import { intro, blogRoll, container, linkToPost, content, info, coverPhoto, subtitle, details, field } from './BlogRoll.module.css'
 
 const BlogRoll = () => {  
     const data = useStaticQuery(graphql`
@@ -80,9 +80,12 @@ const BlogRoll = () => {
 
   const { nodes } = data.allMarkdownRemark
   return (
-      <div className={blogRoll}>
+    <section>
+      <div className={intro}>
         <h2>Recent posts</h2>
-        <p>Load save file</p>
+        <p>Load save file:</p>
+      </div>
+      <div className={blogRoll}>
           {
               nodes
                ? nodes.map(({frontmatter, wordCount}) => {
@@ -117,6 +120,7 @@ const BlogRoll = () => {
                : <p>No posts.</p>
           }
       </div>
+    </section>
   )
 }
 
