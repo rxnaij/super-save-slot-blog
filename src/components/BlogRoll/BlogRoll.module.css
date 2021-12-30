@@ -89,13 +89,15 @@
 
     /* Element content */
     padding: 18px;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.info > *:not(:last-child) {
-    margin-bottom: 24px;
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .coverPhoto {
@@ -103,12 +105,18 @@
     margin-bottom: 24px;
 }
 
-.content h3 {
+.content h3, .title {
     font-family: 'Quantico', 'Open Sans', Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
     text-transform: uppercase;
     margin: 0;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .content h3 a {
@@ -139,4 +147,38 @@
 
 .subtitle {
     margin: 0;
+}
+
+.gamesContainer {
+    border: 2px solid #fff;
+    padding: 6px;
+
+    background-color: hsl(209, 33%, 41%);
+    transition: transform 0.3s ease-out;
+    position: relative;
+
+}
+
+.gamesContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: none;
+    padding: 18px;
+    min-height: 100%;
+}
+
+.canvas {
+    display: block;
+}
+
+.games {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    font-family: 'Quantico', 'Open Sans', Helvetica, sans-serif;
 }

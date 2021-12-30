@@ -2,6 +2,7 @@ import React from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import PostStats from '../common/PostStats'
+import StatusSlot from './StatusSlot'
 
 import { intro, blogRoll, container, linkToPost, content, info, coverPhoto, subtitle, details, field } from './BlogRoll.module.css'
 
@@ -86,6 +87,7 @@ const BlogRoll = () => {
         <p>Load save file:</p>
       </div>
       <div className={blogRoll}>
+        <StatusSlot />
           {
               nodes
                ? nodes.map(({frontmatter, wordCount}) => {

@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@react-three/drei": "^8.3.1",
+    "@react-three/fiber": "^7.0.24",
+    "bootstrap-icons": "^1.7.2",
     "gatsby": "^3.1.2",
     "gatsby-plugin-gatsby-cloud": "^2.1.0",
     "gatsby-plugin-image": "^1.1.2",
@@ -23,9 +26,11 @@
     "netlify-cms-app": "^2.14.34",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
+    "react-bootstrap-icons": "^1.7.2",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "styled-components": "^5.2.3"
+    "styled-components": "^5.2.3",
+    "three": "^0.136.0"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.12.0",
